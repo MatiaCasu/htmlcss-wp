@@ -56,7 +56,7 @@ header > img {
   margin: 20px 0;
 }
 
-.hero, .hero > img, .hero-overlay{
+.hero, .hero > img{
   width: 100%;
   height: 300px;
   border-radius: 10px;
@@ -64,12 +64,6 @@ header > img {
 
 .hero > img{
   object-fit: cover;
-}
-
-.hero-overlay{
-  background-color: rgba(0,0,0,0.2);
-  position: absolute;
-  bottom: 0;
 }
 
 .hero-text{
@@ -84,12 +78,7 @@ header > img {
 /* /INTESTAZIONE*/
 
 /* CORPO */
-.main-block{
-  background-color: blue;
-}
-
 .main-block > div{
-  background-color: lightblue;
   float: left;
   margin-bottom: 20px;
 }
@@ -100,14 +89,19 @@ header > img {
 
 .block-left, .block-right{
   width: 20%;
-  height: 300px;
 }
 
 .block-center{
   width: calc(60% - 20px);
-  height: 300px;
   margin: 0 10px;
 }
+
+.main-block .block-img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
 /* /CORPO */
 
 /* FOOTER */
