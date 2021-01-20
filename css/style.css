@@ -45,18 +45,19 @@ header > img {
   text-decoration: none;
 }
 /* /NAV */
+/* HERO */
+.hero > img{
+  object-fit: cover;
+  width: 100%;
+  height: 350px;
+  margin: 20px 0;
+}
 
-
+/* /HERO */
 
 /* /INTESTAZIONE*/
 
-/* SEZIONE 1 */
-.empty{
-  height: 300px;
-  background-color: yellow;
-  margin: 20px 0;
-}
-/* /SEZIONE 1 */
+
 
 /* SEZIONE 2 */
 .full{
