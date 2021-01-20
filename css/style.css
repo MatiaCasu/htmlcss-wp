@@ -4,11 +4,16 @@
   box-sizing: border-box;
 }
 /* RESET */
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+/* testo e titoli #929292
+testo della navigazione #85858 */
 
 /* CONTENITORE*/
 .container{
   width: 60%;
-  margin: 20px auto;
+  margin: 5px auto;
 }
 
 .clearfix::after{
@@ -20,9 +25,27 @@
 
 /* INTESTAZIONE*/
 .head{
-  height: 50px;
-  background-color: pink;
+  color: #9b9b9b;
+  font-weight: 500;
 }
+
+/* LOGO */
+header > img {
+  height: 50px;
+  padding-right: 10px;
+  border-right: 1px solid #9b9b9b;
+}
+/* /LOGO */
+
+/* NAV */
+.head li{
+  display: inline-block;
+  margin: 10px 10px 0 0;
+}
+/* /NAV */
+
+
+
 /* /INTESTAZIONE*/
 
 /* SEZIONE 1 */
