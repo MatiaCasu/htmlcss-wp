@@ -3,13 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* RESET */
+/* /RESET */
+
 body{
   font-family: 'Montserrat', sans-serif;
 }
 
-p, nav {
+p, nav{
   font-size: 13px;
+}
+
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.overlay{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 /* /BODY e Proprietà fisse */
 
@@ -18,16 +32,9 @@ p, nav {
   width: 60%;
   margin: 5px auto;
 }
-
-.clearfix::after{
-  content: "";
-  clear: both;
-  display: block;
-}
 /* /CONTENITORE */
 
 /* INTESTAZIONE*/
-
 /* LOGO */
 header > img {
   height: 50px;
@@ -40,13 +47,12 @@ header > img {
 .head li, .head a{
   display: inline-block;
 }
+
 .head a {
-  display: inline-block;
   margin: 10px 5px 0 0;
   color: #9b9b9b;
   font-weight: 500;
   text-decoration: none;
-
 }
 /* /NAV */
 
@@ -56,23 +62,25 @@ header > img {
   margin: 20px 0;
 }
 
-.hero, .hero > img{
+.hero, .hero > img, .overlay.hero{
   width: 100%;
   height: 300px;
   border-radius: 10px;
 }
 
 .hero > img{
+  position: absolute;
   object-fit: cover;
 }
 
-.hero-text{
+.hero-text {
   width: 50%;
   color: #fff;
-  margin: 50px 30px;
+  margin: 30px 20px;
   position: absolute;
   bottom: 0;
 }
+
 /* /HERO */
 
 /* /INTESTAZIONE*/
@@ -85,6 +93,7 @@ header > img {
 
 .block-head{
   width: 100%;
+  margin: 10px 0;
 }
 
 .block-left, .block-right{
@@ -96,12 +105,27 @@ header > img {
   margin: 0 10px;
 }
 
-.main-block .block-img{
-  width: 100%;
-  height: 150px;
+.block-img{
   object-fit: cover;
+  width: 100%;
 }
 
+.block-center, .block-left, .block-right{
+  position: relative;
+}
+
+.block-img, .overlay.center, .overlay.lateral{
+  height: 150px;
+  border-radius: 10px;
+}
+
+.block-text, .block-head > h5 {
+  color: #929292;
+}
+
+.block-text > h4{
+  color: #000;
+}
 /* /CORPO */
 
 /* FOOTER */
@@ -111,8 +135,9 @@ header > img {
   text-align: center;
   font-weight: 500;
 }
+
 #heart{
   color: red;
-  font-size: 30px;
+  font-size: 20px;
 }
 /* /FOOTER */
