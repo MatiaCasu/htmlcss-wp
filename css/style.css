@@ -24,10 +24,6 @@ testo della navigazione #85858 */
 /* /CONTENITORE */
 
 /* INTESTAZIONE*/
-.head{
-  color: #9b9b9b;
-  font-weight: 500;
-}
 
 /* LOGO */
 header > img {
@@ -38,9 +34,15 @@ header > img {
 /* /LOGO */
 
 /* NAV */
-.head li{
+.head li, .head a{
+  display: inline-block;
+}
+.head a {
   display: inline-block;
   margin: 10px 10px 0 0;
+  color: #9b9b9b;
+  font-weight: 500;
+  text-decoration: none;
 }
 /* /NAV */
 
