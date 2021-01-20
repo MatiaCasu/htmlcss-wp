@@ -107,7 +107,12 @@ header > img {
 /* FOOTER */
 .foot{
   height: 25px;
-  background-color: purple;
-  margin-top: 5px;
+  margin: 5px 0;
+  text-align: center;
+  font-weight: 500;
+}
+#heart{
+  color: red;
+  font-size: 30px;
 }
 /* /FOOTER */
