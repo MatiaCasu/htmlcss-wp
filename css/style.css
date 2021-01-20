@@ -84,27 +84,26 @@ header > img {
 /* /INTESTAZIONE*/
 
 /* CORPO */
-.full{
+.main-block{
   background-color: blue;
 }
 
-.full > div{
+.main-block > div{
   background-color: lightblue;
   float: left;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.full-head{
-  height: 30px;
+.block-head{
   width: 100%;
 }
 
-.full-left, .full-right{
+.block-left, .block-right{
   width: 20%;
   height: 300px;
 }
 
-.full-center{
+.block-center{
   width: calc(60% - 20px);
   height: 300px;
   margin: 0 10px;
